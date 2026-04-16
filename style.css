@@ -1,0 +1,120 @@
+@import url("https://fonts.bunny.net/css?family=annie-use-your-telescope:400|architects-daughter:400|advent-pro:400,600");
+
+:root {
+    --brand-bg: #02121b;
+    --brand-accent: #00c4a0;
+    --brand-accent2: #0a84c8;
+    --brand-surface: #071e2a;
+    --brand-border: #0e3348;
+    --brand-text: #e5e5e5;
+    --brand-muted: #7bafc8;
+
+    --header-font: Architects Daughter, handwriting;
+    --page-font: Advent Pro;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--page-font);
+}
+
+body {
+    background-color: var(--brand-bg);
+    color: #e5e5e5;
+}
+
+header {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: fit-content;
+    width: 9%;
+}
+
+main {
+    align-content: center;
+    padding: 1rem;
+    background:
+        linear-gradient(rgb(28, 28, 28, 0.5)),
+        url("src/technician.jpg") center center / cover no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+footer {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    vertical-align: middle;
+}
+
+.display-text {
+    font-family: var(--header-font);
+    text-transform: capitalize;
+}
+
+.main {
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+.content > * {
+    padding: 1rem 5rem;
+}
+
+.hero {
+    background-color: var(--brand-surface);
+    border: 1px solid var(--brand-border);
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--brand-surface);
+    border: 1px solid var(--brand-border);
+    border-radius: 0.9rem;
+    padding: 1.1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: start;
+}
+
+.card ion-icon {
+    font-size: 1.5rem;
+}
+
+.card .card-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--brand-text);
+}
+
+.card .card-text {
+    font-size: 0.78rem;
+}
+
+.contact {
+    margin: 0 2rem 2.5rem;
+    background-color: var(--brand-surface);
+    border: 1px solid var(--brand-border);
+    border-radius: 10px;
+    padding: 1.8rem 2rem;
+}
