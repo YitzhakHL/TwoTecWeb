@@ -1,80 +1,125 @@
-<!doctype html>
-<html>
-    <head>
-        <title>TwoTecWeb</title>
-        <link rel="icon" href="src/icon.png" />
-        <link rel="stylesheet" href="style.css" />
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwoTecWeb - Tecnología Confiable</title>
+    <link rel="stylesheet"
+          href="https://fonts.bunny.net/css?family=annie-use-your-telescope:400|architects-daughter:400|advent-pro:400,600">
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Extra -->
+    <link rel="stylesheet" href="src/styles.css">
+    <script type="module" src="src/js/script.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-content">
+            <a href="#" class="logo">TwoTecWeb</a>
+            <nav>
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu" aria-label="Menú">☰</button>
+        </div>
+    </div>
+</header>
 
-        <link rel="preconnect" href="https://fonts.bunny.net" />
-        <link
-            href="https://fonts.bunny.net/css?family=annie-use-your-telescope:400|architects-daughter:400|advent-pro:400"
-            rel="stylesheet"
-        />
-    </head>
-    <body class="main">
-        <header>
-            <img class="logo" src="src/icon.png" alt="Logo" />
-            <div>
-                <h1 class="display-text">TwoTecWeb</h1>
-                <p>Tecnología Confiable, Resultados Confiables</p>
+<main>
+    <section class="hero">
+        <div class="container">
+            <img src="src/icon.png" alt="TwoTecWeb Logo" class="logo-img" onerror="this.style.display='none'">
+            <h1>Tecnología Confiable,<br>resultados confiables</h1>
+            <p class="subtitle">Soporte técnico profesional para tu negocio y hogar</p>
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title">¿Problemas con tu equipo o red?<br>Nosotros lo solucionamos</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <ion-icon name="desktop-outline" class="service-icon"></ion-icon>
+                    <h3>Soporte Técnico</h3>
+                    <p>Mantenimiento, virus, formateo y optimización de equipos.</p>
+                </div>
+                <div class="service-card">
+                    <ion-icon name="wifi-outline" class="service-icon"></ion-icon>
+                    <h3>Redes y WiFi</h3>
+                    <p>Redes empresariales y WiFi de alta performance.</p>
+                </div>
+                <div class="service-card">
+                    <ion-icon name="server-outline" class="service-icon"></ion-icon>
+                    <h3>Servidores</h3>
+                    <p>Configuración y respaldos de servidores empresariales.</p>
+                </div>
+                <div class="service-card">
+                    <ion-icon name="videocam-outline" class="service-icon"></ion-icon>
+                    <h3>Cámaras CCTV</h3>
+                    <p>Sistemas de seguridad con monitoreo 24/7.</p>
+                </div>
+                <div class="service-card">
+                    <ion-icon name="cash-outline" class="service-icon"></ion-icon>
+                    <h3>Punto de Venta</h3>
+                    <p>Sistemas POS completos para tu negocio.</p>
+                </div>
+                <div class="service-card">
+                    <ion-icon name="globe-outline" class="service-icon"></ion-icon>
+                    <h3>Web y Tiendas</h3>
+                    <p>Páginas web y tiendas en línea profesionales.</p>
+                </div>
+                <div class="service-card">
+                    <ion-icon name="shield-checkmark-outline" class="service-icon"></ion-icon>
+                    <h3>Seguridad</h3>
+                    <p>Protección informática completa para tu empresa.</p>
+                </div>
             </div>
-        </header>
+        </div>
+    </section>
 
-        <main class="content">
-            <div class="hero">
-                <h2 class="display-text">¿Problemas con tu equipo o red?</h2>
-                <p>
-                    Soluciones de soporte técnico, redes, servidores y desarrollo web para empresas y particulares en
-                    Querétaro y alrededores.
-                </p>
-            </div>
-            <div class="grid">
-                <div class="card">
-                    <ion-icon name="laptop-outline"></ion-icon>
-                    <h3 class="card-title">Soporte Técnico</h3>
-                    <p class="card-text">Mantenimiento, eliminación de virus y formateo de equipos.</p>
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <ion-icon name="flash-outline"></ion-icon>
+                    </div>
+                    <h3>Servicio Rápido</h3>
                 </div>
-                <div class="card">
-                    <ion-icon name="wifi-outline"></ion-icon>
-                    <h3 class="card-title">Redes y Wi-Fi</h3>
-                    <p class="card-text">Infraestructura de red empresarial y cobertura WiFi.</p>
+                <div class="feature-item">
+                    <ion-icon name="star-outline" class="feature-icon"></ion-icon>
+                    <h3>Atención Profesional</h3>
                 </div>
-                <div class="card">
-                    <ion-icon name="server-outline"></ion-icon>
-                    <h3 class="card-title">Servidores</h3>
-                    <p class="card-text">Configuración de servidores y respaldos seguros.</p>
+                <div class="feature-item">
+                    <ion-icon name="pricetag-outline" class="feature-icon"></ion-icon>
+                    <h3>Precios Accesibles</h3>
                 </div>
-                <div class="card">
-                    <ion-icon name="videocam-outline"></ion-icon>
-                    <h3 class="card-tltle">CCTV</h3>
-                    <p class="card-text">Instalación y configuración de cámaras de seguridad.</p>
-                </div>
-                <div class="card">
-                    <ion-icon name="cash-outline"></ion-icon>
-                    <h3 class="card-title">Punto de Venta</h3>
-                    <p class="card-text">Implementación de sistemas POS para tu negocio</p>
-                </div>
-                <div class="card">
-                    <ion-icon name="globe-outline"></ion-icon>
-                    <h3 class="card-title">Páginas web</h3>
-                    <p class="card-text">Desarrollo de sitios y tiendas en línea profesionales.</p>
+                <div class="feature-item">
+                    <ion-icon name="home-outline" class="feature-icon"></ion-icon>
+                    <h3>Servicio en Sitio y Remoto</h3>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="contact">
-                <h3>¿Listo para resolver tu problema?</h3>
+    <section id="contacto" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¡Contáctanos hoy!</h2>
+                <p>Solucionamos tus problemas tecnológicos de manera rápida y profesional.</p>
             </div>
-        </main>
+        </div>
+    </section>
+</main>
 
-        <footer>
-            <span>&copy; 2026 TwoTecWeb - Tecnología Confiable, Resultados Confiables.</span>
-            <span>
-                <ion-icon name="location-outline"></ion-icon>
-                San Juan del Río, Querétaro.
-            </span>
-        </footer>
-
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </body>
+<footer>
+    <div class="container">
+        <p>&copy; 2026 TwoTecWeb. Tecnología Confiable, Resultados Confiables.</p>
+    </div>
+</footer>
+</body>
 </html>
